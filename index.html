@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan untuk Yas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Warna latar belakang yang lebih cerah */
+            color: #333; /* Warna teks */
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #00796b; /* Warna hijau tua untuk judul */
+        }
+        button {
+            background-color: #00796b; /* Warna tombol */
+            color: white; /* Warna teks tombol */
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px; /* Sudut tombol yang membulat */
+        }
+        button:hover {
+            background-color: #004d40; /* Warna tombol saat hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Halo, Yas di sanaa?</h1>
+    <form action="/question1" method="post">
+        <button type="submit" name="answer" value="Iyaa, gw di siniii">Iyaa, gw di siniii</button>
+        <button type="submit" name="answer" value="Kaga">Kaga</button>
+    </form>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <script>
+                alert("{{ messages[0] }}");  // Menampilkan pesan dalam pop-up
+            </script>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

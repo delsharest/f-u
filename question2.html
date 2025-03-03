@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mau ke mana nih, kak?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Warna latar belakang yang lebih cerah */
+            color: #333; /* Warna teks */
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #00796b; /* Warna hijau tua untuk judul */
+        }
+        button {
+            background-color: #00796b; /* Warna tombol */
+            color: white; /* Warna teks tombol */
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px; /* Sudut tombol yang membulat */
+        }
+        button:hover {
+            background-color: #004d40; /* Warna tombol saat hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Mau ke mana nih, kak?</h1>
+    <form action="/question2" method="post">
+        <button type="submit" name="destination" value="Bandung, kuliah nih sibuk">Bandung, kuliah nih sibuk</button>
+        <button type="submit" name="destination" value="Sukabumi, libur cuyyy">Sukabumi, libur cuyyy</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalo kamu ke Bandung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Warna latar belakang yang lebih cerah */
+            color: #333; /* Warna teks */
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #00796b; /* Warna hijau tua untuk judul */
+        }
+        ul {
+            text-align: left; /* Rata kiri untuk daftar */
+            display: inline-block; /* Agar daftar tidak memenuhi lebar halaman */
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            {% if show_popup %}
+                alert("Hati-hati dan jaga kesehatan selalu yaa!");
+            {% endif %}
+        };
+    </script>
+</head>
+<body>
+    <h1>Things Yas Have to Remember Before He Went to Bandung</h1>
+    <ul>
+        <li>Jangan begadang, tidur yang cukup</li>
+        <li>Bawa dan siapkan perlengkapan yang dibutuhkan, nyiapinnya jangan ngedadak supaya ga ada yang ketinggalan</li>
+        <li>Isi bensin (?)</li>
+        <li>Remind that you have to take a rest if you already feel tired! Pokoknya ga boleh maksain apapa nya, kalo udah capek get the rest secepatnya, berhenti dulu, yang penting nanti tetep bisa sampe ke tujuannya kan</li>
+        <li>Kunci kostnya bawa</li>
+    </ul>
+</body>
+</html>
